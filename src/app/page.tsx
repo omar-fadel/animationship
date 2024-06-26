@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="w-screen h-screen bg-navy-blue flex justify-center items-center">
+    <main className="w-screen py-16 min-h-screen bg-navy-blue flex justify-center items-center">
       <div className="px-6 max-w-screen-lg flex bg bg-background-1 bg-cover bg-center flex-col items-center text-center justify-center text-white gap-16">
-        <section className="flex flex-col items-center justify-center">
+        <section className="flex flex-col justify-center">
           <Image
             className="mb-2"
             alt="logo"
