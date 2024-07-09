@@ -1,6 +1,11 @@
-import Image from "next/image";
-import Timeline from "@/components/Timeline";
-import LenisSmooth from "@/components/LenisSmooth";
+import dynamic from "next/dynamic";
+
+const Timeline = dynamic(() => import("@/components/Timeline"), {
+  ssr: false,
+});
+const LenisSmooth = dynamic(() => import("@/components/LenisSmooth"), {
+  ssr: false,
+});
 
 export default function Page() {
   return (

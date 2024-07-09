@@ -169,7 +169,9 @@ export default function Timeline() {
             <div className="point point4">
               <div className="detail">
                 <h2>2023</h2>
-                <p>Indonesia's No.1 commercial Fitness Equipment Suppliers.</p>
+                <p>
+                  Indonesia&apos;s No.1 commercial Fitness Equipment Suppliers.
+                </p>
               </div>
             </div>
             <img src="/dumble.png" alt="dumble" />
