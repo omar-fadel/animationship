@@ -1,0 +1,182 @@
+.Timeline {
+  height: 600vh;
+  position: relative;
+  font-size: 1vw;
+}
+
+.Timeline .Frame {
+  position: sticky;
+  top: 0%;
+  height: 100vh;
+  width: 100%;
+
+  display: grid;
+  place-content: center;
+  overflow: hidden;
+}
+
+.Timeline .Frame .heading {
+  font-size: 3vw;
+  opacity: 0;
+  font-weight: 700;
+}
+
+.Timeline .Frame .dumbleWrapper {
+  position: absolute;
+  top: 0%;
+  bottom: 0;
+  left: 100%;
+  width: 100%;
+  transform-origin: left;
+}
+
+.Timeline .Frame .dumbleWrapper .dumble {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.Timeline .Frame .dumbleWrapper .dumble img {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.Timeline .Frame .dumbleWrapper .dumble .point {
+  position: absolute;
+  top: 50%;
+  width: 2px;
+  transform: translateY(-100%);
+  transform-origin: bottom;
+  background-color: #000;
+}
+
+.Timeline .Frame .dumbleWrapper .dumble .point1 {
+  left: 18.5%;
+  height: 24%;
+}
+.Timeline .Frame .dumbleWrapper .dumble .point2 {
+  left: 23.5%;
+  height: 31%;
+}
+.Timeline .Frame .dumbleWrapper .dumble .point3 {
+  left: 28.5%;
+  height: 40%;
+}
+.Timeline .Frame .dumbleWrapper .dumble .point4 {
+  left: 50%;
+  height: 33%;
+}
+
+.Timeline .Frame .dumbleWrapper .dumble .point .detail {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.Timeline .Frame .dumbleWrapper .dumble .point .detail p {
+  font-size: 0.5em;
+  width: 21ch;
+  padding-bottom: 0.8em;
+  font-weight: 400;
+}
+
+.Timeline .Frame .dumbleWrapper .dumble .point4 .detail p {
+  font-size: 1.2em;
+}
+
+.Timeline .Frame .dumbleWrapper .dumble .point .detail h2 {
+  width: fit-content;
+  white-space: nowrap;
+  line-height: 1.5;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.Timeline .Frame .dumbleWrapper .dumble .point1 .detail h2 {
+  font-size: 1.2em;
+}
+.Timeline .Frame .dumbleWrapper .dumble .point2 .detail h2 {
+  font-size: 1.5em;
+}
+.Timeline .Frame .dumbleWrapper .dumble .point3 .detail h2 {
+  font-size: 1.8em;
+}
+.Timeline .Frame .dumbleWrapper .dumble .point4 .detail h2 {
+  font-size: 3.2em;
+}
+
+.Timeline .Frame .link {
+  width: fit-content;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  margin-bottom: 2em;
+  z-index: 20;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Timeline .Frame .link button {
+  border: none;
+  outline: none;
+  border-radius: 0.4em;
+  background-color: #d9d9d950;
+  padding: 0.5em 1em;
+  font-size: 1.5em;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  gap: .5em;
+  cursor: pointer;
+}
+
+.Timeline .Frame .link button img {
+  display: block;
+  width: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .Timeline {
+    font-size: 3vw;
+  }
+
+  .Timeline .Frame .heading {
+    font-size: 10vw;
+  }
+
+  .Timeline .Frame .dumbleWrapper .dumble {
+    width: 130%;
+  }
+
+  .Timeline .Frame .dumbleWrapper .dumble .point1 {
+    left: 17%;
+    height: 28%;
+  }
+  .Timeline .Frame .dumbleWrapper .dumble .point2 {
+    left: 23.5%;
+    height: 45%;
+  }
+  .Timeline .Frame .dumbleWrapper .dumble .point3 {
+    left: 30%;
+    height: 72%;
+  }
+  .Timeline .Frame .dumbleWrapper .dumble .point4 {
+    left: 50%;
+    height: 33%;
+  }
+
+  .Timeline .Frame .dumbleWrapper .dumble .point .detail p {
+    width: 14ch;
+  }
+  .Timeline .Frame .dumbleWrapper .dumble .point4 .detail p {
+    width: 18ch;
+  }
+}

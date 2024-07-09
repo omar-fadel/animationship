@@ -11,7 +11,11 @@
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.4"
+    "next": "14.2.4",
+    "@gsap/react": "^2.1.1",
+    "@studio-freight/lenis": "^1.0.42",
+    "gsap": "^3.12.5",
+    "scrolltrigger": "^1.0.1"
   },
   "devDependencies": {
     "typescript": "^5",
