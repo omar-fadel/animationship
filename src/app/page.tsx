@@ -20,10 +20,13 @@ export default function Home() {
         </section>
         <section>
           <h2 className="text-h2 mb-6">
-            Meanwhile, take a look at our interactive fun company profile
+            Meanwhile, take a look at our interactive, fun company profile.
           </h2>
           <button className="p-4 py-3 rounded-lg bg-simon hover:bg-red-800 hover:scale-110 transition-all text-button">
-            <a href="/The Gym Brand - Company Profile v9 2024.pdf" download>
+            <a
+              href="/The Gym Brand - Company Profile v9 2024.pdf"
+              target="_blank"
+            >
               <div className="flex items-center gap-4">
                 <Image
                   src={"/svg/Company Profile.svg"}
